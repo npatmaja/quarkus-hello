@@ -18,4 +18,12 @@ public class ExampleResourceTest {
              .body(is("hello"));
     }
 
+    @Test
+    public void testGreetingEndpoint() {
+    	given()
+    		.when().get("/hello/greeting/john")
+    		.then()
+    			.statusCode(200)
+    			.body(is("halo john"));
+    }
 }

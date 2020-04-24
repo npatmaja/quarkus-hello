@@ -36,3 +36,4 @@ release.properties
 
 # App
 logs/
+*.log

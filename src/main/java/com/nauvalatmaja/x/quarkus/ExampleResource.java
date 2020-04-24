@@ -22,7 +22,13 @@ public class ExampleResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("/polite/{name}")
-    public String greeting(@PathParam("name") String name) {
+    public String polite(@PathParam("name") String name) {
     	return helloService.politeHello(name);
+    }
+    
+    @GET
+    @Path("/greeting/{name}")
+    public String greeting(@PathParam("name") String name) {
+    	return helloService.greeting(name);
     }
 }
