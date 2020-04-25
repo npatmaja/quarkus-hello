@@ -31,4 +31,10 @@ public class ExampleResource {
     public String greeting(@PathParam("name") String name) {
     	return helloService.greeting(name);
     }
+    
+    @GET
+    @Path("/advance-greeting/{name}")
+    public String advanceGreeting(@PathParam("name") String name) {
+    	return helloService.advanceGreeting(name);
+    }
 }

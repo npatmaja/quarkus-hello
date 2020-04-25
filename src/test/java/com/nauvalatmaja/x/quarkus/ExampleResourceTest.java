@@ -26,4 +26,14 @@ public class ExampleResourceTest {
     			.statusCode(200)
     			.body(is("halo john"));
     }
+    
+    
+    @Test
+    public void testAdvanceGreetingEndpoint() {
+    	given()
+    		.when().get("/hello/advance-greeting/john")
+    		.then()
+    			.statusCode(200)
+    			.body(is("halo, welcome to quarkus, john!"));
+    }
 }
