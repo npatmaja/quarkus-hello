@@ -1,5 +1,7 @@
 package com.nauvalatmaja.x.quarkus.db.model;
 
+import java.util.UUID;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -17,6 +19,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class User {
 	@Id
-	private String id;
+	private UUID id;
 	private String username;
 }

@@ -40,7 +40,7 @@ class UserRepositoryTest {
 	@Test
 	void givenValidUser_whenPersist_shouldPersistToDB() {
 		User user = User.builder()
-				.id(UUID.randomUUID().toString())
+				.id(UUID.randomUUID())
 				.username("john.doe")
 				.build();
 		
