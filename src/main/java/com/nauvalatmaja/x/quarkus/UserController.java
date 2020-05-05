@@ -20,7 +20,7 @@ public class UserController {
 	@POST
 	@Path("/create")
 	@Transactional
-	public CreateUserResponse createUser(CreateUserRequest request) {
+	public CreateUserResponse createUser(CreateUserRequest request) throws Exception {
 		UUID id = service.addUser(request);
 		return CreateUserResponse.builder().userId(id.toString()).build();
 	}
