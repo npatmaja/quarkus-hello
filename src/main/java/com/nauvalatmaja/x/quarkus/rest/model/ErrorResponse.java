@@ -1,4 +1,4 @@
-package com.nauvalatmaja.x.quarkus;
+package com.nauvalatmaja.x.quarkus.rest.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.nauvalatmaja.x.quarkus;
+package com.nauvalatmaja.x.quarkus.rest.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 @AllArgsConstructor
-public class CreateUserRequest {
-	private String username;
+public class CreateUserResponse {
+	private String userId;
 }

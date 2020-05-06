@@ -14,6 +14,7 @@ import org.junit.jupiter.api.Test;
 
 import com.nauvalatmaja.x.quarkus.db.model.User;
 import com.nauvalatmaja.x.quarkus.db.repository.UserRepository;
+import com.nauvalatmaja.x.quarkus.rest.model.CreateUserRequest;
 
 import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.h2.H2DatabaseTestResource;

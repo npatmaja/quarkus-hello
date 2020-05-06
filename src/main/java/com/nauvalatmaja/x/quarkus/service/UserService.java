@@ -1,4 +1,4 @@
-package com.nauvalatmaja.x.quarkus;
+package com.nauvalatmaja.x.quarkus.service;
 
 import java.util.UUID;
 
@@ -7,8 +7,10 @@ import javax.inject.Inject;
 
 import org.jboss.logging.Logger;
 
+import com.nauvalatmaja.x.quarkus.InvalidRequestException;
 import com.nauvalatmaja.x.quarkus.db.model.User;
 import com.nauvalatmaja.x.quarkus.db.repository.UserRepository;
+import com.nauvalatmaja.x.quarkus.rest.model.CreateUserRequest;
 
 @ApplicationScoped
 public class UserService {

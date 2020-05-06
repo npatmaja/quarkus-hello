@@ -1,4 +1,4 @@
-package com.nauvalatmaja.x.quarkus;
+package com.nauvalatmaja.x.quarkus.config;
 
 import java.io.IOException;
 

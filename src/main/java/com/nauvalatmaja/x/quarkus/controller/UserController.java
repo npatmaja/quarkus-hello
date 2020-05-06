@@ -1,4 +1,4 @@
-package com.nauvalatmaja.x.quarkus;
+package com.nauvalatmaja.x.quarkus.controller;
 
 import java.util.UUID;
 
@@ -9,6 +9,10 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+
+import com.nauvalatmaja.x.quarkus.rest.model.CreateUserRequest;
+import com.nauvalatmaja.x.quarkus.rest.model.CreateUserResponse;
+import com.nauvalatmaja.x.quarkus.service.UserService;
 
 @Path("/users")
 @Produces(MediaType.APPLICATION_JSON)

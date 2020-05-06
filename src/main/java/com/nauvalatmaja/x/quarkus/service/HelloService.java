@@ -1,10 +1,12 @@
-package com.nauvalatmaja.x.quarkus;
+package com.nauvalatmaja.x.quarkus.service;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 import org.jboss.logmanager.LogManager;
+
+import com.nauvalatmaja.x.quarkus.config.GreetingConfiguration;
 
 @ApplicationScoped
 public class HelloService {
