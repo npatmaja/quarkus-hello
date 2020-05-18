@@ -8,7 +8,7 @@ import com.nauvalatmaja.x.quarkus.rest.model.ErrorResponse;
 
 @Provider
 public class GeneralExceptionMapper implements ExceptionMapper<Exception> {
-
+	
 	@Override
 	public Response toResponse(Exception exception) {
 		return Response.status(500).entity(new ErrorResponse("500x01", "General internal server error")).build();
