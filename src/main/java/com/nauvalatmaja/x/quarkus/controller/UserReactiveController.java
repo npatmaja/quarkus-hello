@@ -33,16 +33,24 @@ public class UserReactiveController {
 	@Path("/create")
 	@Transactional
 	public Uni<CreateUserResponse> createUser(CreateUserRequest request) {
-		Function<UUID, CreateUserResponse> mapper = id -> CreateUserResponse.builder().userId(id.toString()).build();
-		return reactiveService.createUser(request)
-			.onItem().apply(mapper);
+		Function<UUID, CreateUserResponse> mapper = id -> CreateUserResponse
+				.builder()
+				.userId(id.toString())
+				.build();
+		return reactiveService
+				.createUser(request)
+				.onItem().apply(mapper);
 	}
 	
 	@POST
 	@Path("/create2")
 	@Transactional
 	public Uni<CreateUserResponse> createUser2(CreateUserRequest request) {
-		Function<UUID, CreateUserResponse> mapper = id -> CreateUserResponse.builder().userId(id.toString()).build();
+		Function<UUID, CreateUserResponse> mapper = id -> CreateUserResponse
+				.builder()
+				.userId(id.toString())
+				.build();
+		
 		return Uni.createFrom().item(() -> {
 			try {
 				return service.addUser(request);

@@ -17,11 +17,10 @@ import com.nauvalatmaja.x.quarkus.db.repository.UserRepository;
 import com.nauvalatmaja.x.quarkus.rest.model.CreateUserRequest;
 
 import io.quarkus.test.common.QuarkusTestResource;
-import io.quarkus.test.h2.H2DatabaseTestResource;
 import io.quarkus.test.junit.QuarkusTest;
 
 @QuarkusTest
-@QuarkusTestResource(H2DatabaseTestResource.class)
+@QuarkusTestResource(DatabaseResource.class)
 class UserControllerTest {
 
 	@Inject
